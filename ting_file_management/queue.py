@@ -1,5 +1,4 @@
 from ting_file_management.abstract_queue import AbstractQueue
-from collections import deque
 
 
 class Queue(AbstractQueue):
@@ -15,11 +14,11 @@ class Queue(AbstractQueue):
     def dequeue(self):
         if len(self.queue) == 0:
             return None
-        
+
         return self.queue.pop(0)
 
     def search(self, index):
         if index < 0 or index > len(self.queue) - 1:
             raise IndexError("Índice Inválido ou Inexistente")
-        
+
         return self.queue[index]
