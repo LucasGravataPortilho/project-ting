@@ -1,4 +1,3 @@
-#iniciando o projeto
 def exists_word(word, instance):
     """Aqui irá sua implementação"""
 
